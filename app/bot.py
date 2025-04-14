@@ -2,10 +2,13 @@ import logging
 import os
 import re
 import telebot
+from dotenv import load_dotenv
+from telegram import Bot
 from telebot import TeleBot
 from telebot.types import Update, WebAppInfo, Message
 from telebot.util import quick_markup
 
+load_dotenv()
 BOT_TOKEN=os.getenv('BOT_TOKEN')
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
