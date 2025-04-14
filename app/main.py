@@ -1,6 +1,7 @@
 import json
 import os
-from app import auth, bot
+import auth
+import bot
 from dotenv import load_dotenv
 from flask import Flask, request
 from flask_cors import CORS
